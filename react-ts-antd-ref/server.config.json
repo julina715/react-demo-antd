@@ -1,18 +1,18 @@
 {
   "server": {
-    "ip": "192.168.2.200",
+    "ip": "192.168.1.101",
     "port": 9992,
-    "author": "eI++MadSkbz3SUfh9vfA3iDOJfhiKc6hyk20hIqVn2F2N4Ix7ar3XfIOqfWpl8veOw1Jxwie3NMb6nVK443KtTvrCob+O12zzvH8w/KqXIqjW0yXLRVhOI88iqGtfJefRPgGl8UfiCOzd49v767+RvzArbI8SRzqzvjtWYR8hJc=",
+    "author": "zdf",
     "_ip": "网关IP(生产环境在nginx服务上配置)",
     "_port": "网关端口(生产环境在nginx服务上配置)",
     "_author": "客户端验证"
   },
   "system": {
     "version": "1.0.0",
-    "name": "天瞳-电诈情报态势感知平台",
+    "name": "demo",
     "static": "192.168.2.200:3031",
     "isHYOrLTPayAccount": false,
-    "_isHYOrLTPayAccountDesc" : "是否开启侦查中心(雷霆)查询次数界面控制"
+    "_isHYOrLTPayAccountDesc" : "是否开启"
   },
   "translate": {
     "lineUrl": "/intelligence-web-static/translate/",
