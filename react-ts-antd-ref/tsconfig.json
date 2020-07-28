@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "./dist/",
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "noEmit": true,
+        "target": "es5",
+        "lib": [
+            "esnext",
+            "dom"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.test.ts"
+    ],
+    "include": [
+        "./src/**/*"
+    ]
+}

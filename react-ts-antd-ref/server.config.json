@@ -1,0 +1,55 @@
+{
+  "server": {
+    "ip": "192.168.2.200",
+    "port": 9992,
+    "author": "eI++MadSkbz3SUfh9vfA3iDOJfhiKc6hyk20hIqVn2F2N4Ix7ar3XfIOqfWpl8veOw1Jxwie3NMb6nVK443KtTvrCob+O12zzvH8w/KqXIqjW0yXLRVhOI88iqGtfJefRPgGl8UfiCOzd49v767+RvzArbI8SRzqzvjtWYR8hJc=",
+    "_ip": "网关IP(生产环境在nginx服务上配置)",
+    "_port": "网关端口(生产环境在nginx服务上配置)",
+    "_author": "客户端验证"
+  },
+  "system": {
+    "version": "1.0.0",
+    "name": "天瞳-电诈情报态势感知平台",
+    "static": "192.168.2.200:3031",
+    "isHYOrLTPayAccount": false,
+    "_isHYOrLTPayAccountDesc" : "是否开启侦查中心(雷霆)查询次数界面控制"
+  },
+  "translate": {
+    "lineUrl": "/intelligence-web-static/translate/",
+    "countryFileName": "country_translate_name.json",
+    "cityFileName": "city_translate_pinyin.json",
+    "_lineUrlDesc": "渗透中心国家城市翻译文件静态路径",
+    "_countryFileNameDesc":"country文件名称",
+    "_cityFileNameDesc":"city文件名称"
+  },
+  "echartMap": {
+    "lineControl": "offline",
+    "onlineUrl":"https://geo.datav.aliyun.com/areas_v2/bound/",
+    "level": "district",
+    "offlineUrl": "/intelligence-web-static/echartMap/",
+    "_lineControlDesc": "echart地图边界数据在线&离线控制，在线：online && 离线：offline（！！不可为空！！）",
+    "_onlineUrlDesc": "在线地址配置",
+    "_levelDesc":"总览页echart地图级别 province-省 city-市 district-区县(配置为离线时，地图级别最小只能到市)",
+    "_offlineUrlDesc": "静态资源路径(离线时需配置)"
+  },
+  "bmapConfig": {
+    "lineControl": "online",
+    "lineUrl": "/intelligence-web-static/bmap/",
+    "bmapAk": "nHidoX1A2Tw2V7AnjXXGxmNb09MnDuF4",
+    "tilesDir": "tiles",
+    "tilesExt": ".jpg",
+    "_lineControlDesc": "地图在线&离线控制，在线：online && 离线：offline（！！不可为空！！）",
+    "_lineUrlDesc": "静态资源路径，如：/static/bmap/，http://192.168.1.100:2021/",
+    "_bmapAkDesc": "百度地图AK（地图在线需要配置）",
+    "_tilesDirDesc": "瓦片图的目录，{lineUrl}下的{tilesDir}目录中（地图离线需要配置）",
+    "_tilesExtDesc": "瓦片图的后缀 (.png .jpg)（地图离线需要配置）"
+  },
+  "bmapDisplay": {
+    "zoom": 10,
+    "_zoomDesc": "地图展示层级"
+  },
+  "smsSendConfig": {
+    "maxLevel": 3,
+    "maxLevelDesc": "短信设置显示最大情报级别 1-显示一级; 2-显示一级，二级; 3.显示一~三级" 
+  }
+}

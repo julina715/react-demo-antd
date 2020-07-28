@@ -1,0 +1,22 @@
+:global {
+    body,
+    html {
+        min-width: 1000px;
+    }
+    ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar {
+        position: absolute;
+        width: 6px;
+        height: 10px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+}
