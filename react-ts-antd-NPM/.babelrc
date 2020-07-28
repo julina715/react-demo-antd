@@ -1,0 +1,9 @@
+{
+    "presets": [
+        [ "env", { "modules": false, "loose": true } ]
+    ],
+    "plugins": [
+        "syntax-dynamic-import",
+        ["import", { "libraryName": "antd", "style": true, "libraryDirectory": "es" }]
+    ]
+}
